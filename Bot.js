@@ -19,7 +19,7 @@ socket.on('connect', function(){
     console.log('Connected')
         //Your session key (aka API key)
         //Get this from your browser's cookies.
-    socket.emit('login', {session: "caugEWT8yyTK2fWylMD5xZicGSKZ4vpZTUFNqE1Zh0M5EM8guZKnsGWpnARP9g0i"});
+    socket.emit('login', {session: "sessionID"});
     socket.on('loggedin', function(data){
                 socket.emit('getbalance', {});
                 username = data.username;
